@@ -4,60 +4,85 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
+   <title>Formulär</title>
+   <link rel="stylesheet" href="projektCSS.css">
 </head>
 <body>
-   <h1>Hur upplever du Fotboll i Stockholm?</h1>
-   <p>Klicka <a href="projekthem.html">här</a> för att gå tillbaka till "Fotboll i Stockholm"</p>
-   <form>
+   <h1>Hur upplever du "Fotboll i Stockholm"?</h1>
+   <p>Tillbaka till <a href="projekthem.html">startsidan</a></p>
+   <form action="projekthem.html">
        <fieldset>
            Vilket kön är du?
            <legend>Generell information</legend>
-           <label for="kön">Man</label>
-           <input type="radio" name="kön" value="Man">
-           <label for="kön">Kvinna</label>
-           <input type="radio" name="kön" value="Kvinna">
+           <label for="man">Man</label>
+           <input type="radio" name="man" value="Man">
+           <label for="kvinna">Kvinna</label>
+           <input type="radio" name="kvinna" value="Kvinna">
            <br>
            <br>
            Vad heter du? (frivilligt)
            <br>
            <input type="text" name="förnamn" placeholder="Förnamn">
            <input type="text" name="efternamn" placeholder="Efternamn">
+           <br>
+           <br>
+           <label for="ålder">Ålder</label>
+           <select name="ålder">
+               <option value="0-15">0-15</option>
+               <option value="15-25">15-25</option>
+               <option value="25-40">25-40</option>
+               <option value="40-60">40-60</option>
+               <option value="60+">60+</option>
+               <option value="." selected>...</option>
+           </select>
        </fieldset>
        <br>
        <br>
        Vad stämmer in på dig?
        <br>
-       <label for="fakta">Bosatt i Stockholm</label>
-       <input type="checkbox" name="fakta" value="Bosatt i Stockholm">
+       <label for="borStockholm">Bosatt i Stockholm</label>
+       <input type="checkbox" name="borStockholm" value="Bosatt i Stockholm">
        <br>
-       <label for="fakta">Fotbollsintresserad</label>
-       <input type="checkbox" name="fakta" value="Fotbollsintresserad">
+       <label for="intresserad">Fotbollsintresserad</label>
+       <input type="checkbox" name="intresserad" value="Fotbollsintresserad">
        <br>
-       <label for="fakta">Har ett favoritlag</label>
-       <input type="checkbox" name="fakta" value="Har ett favoritlag">
+       <label for="favoritlag">Har ett favoritlag</label>
+       <input type="checkbox" name="favoritlag" value="Har ett favoritlag">
        <br>
-       <label for="fakta">Är ofta inne på hemsidor relaterade till fotboll</label>
-       <input type="checkbox" name="fakta" value="Är ofta inne på hemsidor relaterade till fotboll">
+       <label for="ärPåhemsidor">Är ofta inne på hemsidor relaterade till fotboll</label>
+       <input type="checkbox" name="ärPåhemsidor" value="Är ofta inne på hemsidor relaterade till fotboll">
        <br>
-       <label for="fakta">Ser ofta matcher live</label>
-       <input type="checkbox" name="fakta" value="Ser ofta matcher live">
+       <label for="serMatcher">Ser ofta matcher live</label>
+       <input type="checkbox" name="serMatcher" value="Ser ofta matcher live">
        <br>
-       <label for="fakta"></label>
-       
-       Hur nöjd är du med denna hemsida?
+       <br>
+       <label for="nöjdhet">Hur nöjd är du med denna hemsida?</label>
        <br>
        Mycket missnöjd
        <input type="range" name="nöjdhet">
        Mycket nöjd
        <br>
+       <br>
        <legend>Tips på förbättringar om sidan</legend>
        <textarea name="förbättringar" rows="8" cols="25"></textarea>
+       <br>
+       <label for="email" >Email</label>
+       <input type="email" name="email" required>
+       <label for="lösenord">Lösenord</label>
+       <input type="password" name="lösenord" required>
+       <br>
+       <br>
+       Jag godkänner att "Fotboll i Stockholm" använder uppgifterna för att förbättra hemsidan?
+       <label for="ja">Ja</label>
+       <input type="radio" name="ja" checked value="Ja">
+       <br>
        <br>
        <input type="submit" value="Skicka in">
    </form>
 </body>
 </html>
+
+
 
 
 
