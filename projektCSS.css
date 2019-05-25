@@ -1,126 +1,444 @@
 /*Vänstra spalten på hemsidan*/
-nav{
-   width: 15%;
-   height: 100%;
-   background-color: aliceblue;
-   float: left;
+.startnav{
+  width: 15%;
+  height: 100%;
+  background-color: aliceblue;
+  float: left;
 }
-a:hover{
-   color: black;
-   background-color: white;
+
+nav a:hover{
+  color: black;
+  background-color: white;
 }
-/*Ändrar länkarna i navigationsmenyn*/
-li a{
-   color: white;
-   text-decoration: none;
-   display: block;
-   background-color: black;
-   font-size: 180%;
+
+nav a:active{
+  background-color: grey;
 }
-ul{
-   list-style: none;
+
+ /*Ändrar länkarna i navigationsmenyn*/
+.startnav a{
+  color: white;
+  text-decoration: none;
+  display: block;
+  background-color: black;
+  font-size: 1.5vw;
+  width: 100%;
+  height: 4vh;
 }
-h1{
-   text-align: center;
-}
-table{
-   border: 1px solid black;
-   border-collapse: collapse;
-}
+
 /*Ändrar layouten på mittenspalten på startsidan*/
-article{
-   width: 70%;
-   float: left;
+main{
+  width: 68%;
+  float: left;
+  margin: 1%;
 }
+
 main p{
-   margin: 10px;
-   float: left;
+  margin: 10px;
+  float: left;
 }
-aside{
+
+section{
+  margin-top: 50px;
+}
+
+ul{
+  list-style: none;
+  padding: 0%;
+}
+ 
+h1{
+  text-align: center;
+  font-size: 3em;
+}
+
+h2{
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  clear: left;
+}
+
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  float: left;
+  margin-right: 8px;
+ }
+
+th{
+  border: 1px solid black;
+  padding: 5px;
+}
+
+td{
+    border: 1px solid black;
+}
+
+ aside{
    width: 15%;
    float: left;
-}
-/*Ändrar färgtemat på AIK-sidorna. Appliceras på min body*/
-.AIKstyle{
+ }
+
+ /*Ändrar färgtemat på AIK-sidorna. Appliceras på min body*/
+ .AIKstyle{
    background-color: black;
-   color: yellow;
-}
-.AIKnav{
-   width: 15%;
-   height: 100%;
-   background-color: yellow;
-   float: left;
-}
+   color: hsl(63, 97%, 50%);
+ }
+
 /*Ändrar färgerna för navigationsmenyn på AIK-sidorna*/
-.AIKnav a{
-   color: black;
-   text-decoration: none;
-   display: block;
-   background-color: yellow;
-   font-size: 180%;
-}
-.AIKnav a:hover{
-    background-color: white;
-    color: black;
-}
-.AIKstyle table, th, td{
-    border: 1px solid yellow;
+.AIKstyle .startnav a{
+  color: black;
+  text-decoration: none;
+  display: block;
+  background-color: hsl(63, 97%, 50%);
+  font-size: 180%;
 }
 
-.Djurgårdenstyle{
-   background-color: blue;
-   color: yellow;
+.AIKstyle .startnav a:hover{
+  background-color: white;
+  color: black;
 }
 
-.Djurgårdenstyle a{
-   color: blue;
+/*Gör gula ramar runt tabeller på AIKs sidor*/
+.AIKstyle table, .AIKstyle th, .AIKstyle td{
+  border: 1px solid hsl(63, 97%, 50%);
+  border-collapse: collapse;
+  color: hsl(63, 97%, 50%);
+}
+
+.Djurgårdenstyle p{
+  float: left;
+}
+ 
+ /*Ändrar färger på Djurgårdens sida*/
+ .Djurgårdenstyle{
+   background-color: rgb(9, 9, 250);
+   color: hsl(63, 97%, 50%);
+ }
+
+ .Djurgårdenstyle .startnav a{
+   color: rgb(9, 9, 250);
    text-decoration: none;
    display: block;
    background-color: lightblue;
-   font-size: 180%;
    transition-duration: 0.5s;
    transition-property: background-color;
    transition-timing-function: ease;
-}
-.Djurgårdenstyle a:hover{
+ }
+
+ /*Ändrar färg när man har musen över en länk*/
+ .Djurgårdenstyle a:hover{
    background-color: red;
-   color: blue;
+   color: rgb(9, 9, 250);
+ }
+
+.Djurgårdenstyle > header{
+  background-color: lightblue;
+  color: rgb(9, 9, 250);
+  height: 10%;
+  margin-top: 0px;
 }
 
 .Djurgårdenstyle nav{
-   background-color: lightblue;
+  background-color: lightblue;
+}
+
+ /*Gör vita ramar runt tabeller på Djurgårdens sida*/
+ .Djurgårdenstyle table, .Djurgårdenstyle th, .Djurgårdenstyle td{
+  border: 1px solid white;
+  border-collapse: collapse;
+  color: white;
+}
+
+.hammarbystyle{
+  background-color: #30a130;
+  color: white;
+}
+
+/*Stylar Brommapojkarnas sida*/
+.BPstyle{
+  background-color: rgb(148, 17, 17);
+  color: black;
+}
+
+.BPstyle thead, .BPstyle tfoot{
+  color: white;
+}
+
+/*Gör så text lägger sig runt bilderna och så bilderna får lite fritt till objekt runt omkring dom*/
+img{
+  float: left;
+  margin: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.imgAIK{
+  width: 40%;
+}
+
+.imgDIF{
+  width: 20%;
+}
+
+.imgBP{
+  width: 50%;
+}
+
+ /*Skapar symboler framför alla element i spelschemat*/
+aside > ul{
+  list-style: circle;
+  border: 1px solid lightblue;
+}
+
+section p:nth-child(2){
+  background: lightblue;
+  color: rgb(9, 9, 250);
+  font-size: 2.3ex;
+}
+
+b{
+  font-size: 1vw;
+}
+
+ /*Klassen som används på den lokala navigationsmenyn på startsidan*/
+.lokalnav{
+  background-color: red;
+  color: white;
+  height: 2.8rem;
+}
+
+ /*Gör så blocken lägger sig på en rad horisontellt för att få en horisontell meny*/
+.lokalnav li{
+  display: inline-block;
+  height: 100%;
+}
+
+.lokalnav a{
+  color: white;
+  margin: 2px;
+  height: 100%;
+  font-size: 120%;
+}
+
+.lokalnav a:hover{
+  background-color: white;
+  color: black;
+}
  
+ /*Tabell på huvudsidan*/
+#klubbinfotable{
+  width: 65vw;
+  border-radius: 20px;
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
-/*Skapar symboler framför alla element i spelschemat*/
-aside ul{
-   list-style: circle;
-   border: 1px solid lightblue;
+.klubbinfotable td{
+  text-align: center;
 }
-.Djurgårdenstyle header{
+
+ .start{
    background-color: lightblue;
-   color: blue;
-   height: 10%;
-   margin-top: 0px;
-}
-/*Ändrar texten till biljetterna på startsidan*/
-.pbiljetter{
-   font-size: 250%;
+ }
+
+a{
+  text-decoration: none;
 }
 
-.divbiljetter img{
-   float: left;
+p > a:link{
+  color: red;
 }
-/*Skapar knappen för att köpa biljetter på startsidan*/
-.biljettknapp{
+
+p > a:visited{
+  color: blueviolet;
+}
+
+p > a:active{
+  color: hsl(63, 97%, 50%);
+}
+
+/*Sätter storlek på iframes*/
+iframe{
+  width: 600px;
+  height: 400px;
+  margin: 5px;
+  border: 0;
+}
+ 
+/*Horisontell navigationsmeny som skapas när skärmen blir liten*/
+.telefonNavAIK ul, .telefonNavBP ul, .telefonNavDIF ul, .telefonNavHIF ul, .telefonNavStart ul{
+  width: 100%;
+  margin-left: 20%;
+}
+
+.telefonNavAIK li, .telefonNavAIK a{
+  display: inline-block;
+  background-color: hsl(63, 97%, 50%);
+  text-decoration: none;
+  font-size: 6vw;
+ }
+
+ .telefonNavStart li, .telefonNavStart a{
+  display: inline-block;
+  background-color: black;
+  text-decoration: none;
+  font-size: 6vw;
+  color: white;
+ }
+ 
+.telefonNavDIF li, .telefonNavDIF a{
+  display: inline-block;
+  background-color: red;
+  text-decoration: none;
+  font-size: 6vw;
+  color: rgb(9, 9, 250);
+}
+
+.telefonNavDIF a:hover{
+  color: red;
+  background-color: lightblue;
+}
+
+.telefonNavHIF li, .telefonNavHIF a{
+  display: inline-block;
+  background-color: white;
+  text-decoration: none;
+  font-size: 6vw;
+  color: #30a130;
+}
+
+.telefonNavBP li, .telefonNavBP a{
+  display: inline-block;
+  background-color: black;
+  text-decoration: none;
+  font-size: 6vw;
+  color: red;
+}
+
+aside li{
+  text-align: center;
+  list-style: none;
+}
+
+ /*Skapar dropwon-content till den horisontella navigationsmenyn*/
+.dropdown-content{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  font-size: 70%;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+ .dropdown:hover .dropdown-content{
    display: block;
-   background-color: red;
-   width: 100px;
-   height: 40px;
+ }
+
+ /*Fälten i formuläret blir aqua-färgat när man trycker på det*/
+input:focus{
+  background-color: aqua;
 }
-.divbiljetter{
+
+ /*Om skärmen är 930px eller mindre visas inte den ordinarie navigationsmenyn och iframe blir mindre och spelschema visas inte*/
+ @media screen and (max-width: 930px){
+  iframe{
+    width: 300px;
+    height: 200px;
+  }
+  aside{
+    display: none;
+  }
+  main{
+    width: 98%;
+  }
+  body > nav{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 931px) and (max-width: 1400px){
+  iframe{
+    width: 450px;
+    height: 300px;
+  }
+  .telefonNavAIK, .telefonNavDIF, .telefonNavHIF, .telefonNavBP, .telefonNavStart{
+    display:none;
+  }
+}
+
+ /*Om skärmen är 931px eller större syns inte navigationsmenyerna*/
+ @media screen and (min-width: 1201px){
+   .telefonNavAIK, .telefonNavDIF, .telefonNavHIF, .telefonNavBP, .telefonNavStart{
+     display:none;
+   }
+ }
+
+ thead{
+   font-size: 110%;
+   color: black;
+ }
+
+ tbody{
+   color: black;
+   vertical-align: top;
+ }
+
+ ol{
+   font-size: 1.5rem;
+   position: absolute;
+   bottom: 20%;
+   right: 10%;
    border: 1px solid black;
+   border-radius: 10px;
+ }
+
+ /*Siffror i bilder på huvudsidan*/
+.siffra-i-bild{
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 150%;
+  color: white;
 }
 
+.bild-med-text{
+  position: relative;
+  display: inline-block;
+}
+
+dt, dl{
+  font-size: 120%
+}
+
+ /*transform så bild lutar på BPs sida*/
+#transform{
+  transform: skewX(10deg);
+  margin: 35px;
+ }
 
 
+ /*Footer som visas på samtliga sidor*/
+footer{
+  height: 50px;
+  background-color: white;
+  position: relative;
+  width: 100%;
+  color: black;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hammarbystyle footer, .Djurgårdenstyle footer{
+  position: absolute;
+  bottom: 0px;
+}
+ 

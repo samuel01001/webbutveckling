@@ -1,53 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="projektCSS.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fotboll-I-Stockholm</title>
+  <link href="projektCSS.css" rel="stylesheet">
 </head>
-<body>
-    <main>
-        <header>
-            <h1>Fotboll i Stockholm</h1>
-        </header>
-        <nav>
+<body class="start">
+       <header role="banner">
+           <h1>Fotboll i Stockholm</h1>
+       </header>
+       <nav role="navigation" class="startnav">
             <ul>
                 <li><a href="projekthem.html">Start</a></li>
                 <li><a href="slutprojektAIK.html">AIK</a></li>
                 <li><a href="slutprojektDIF.html">Djurgården</a></li>
-                <li><a href="#">Hammarby</a></li>
-                <li><a href="#">Brommapojkarna</a></li>
+                <li><a href="slutprojektHIF.html">Hammarby</a></li>
+                <li><a href="slutprojektBP.html">Brommapojkarna</a></li>
             </ul>
-        </nav>
-        <article>
-            <p>Välkommen till "Fotboll i Stockholm". Denna hemsida kommer ge dig en guide över dom största och mest populära fotbollsklubbarna i Stockholm</p>
+       </nav>
+       <main role="main">
+            <nav class="telefonNavStart">
+                <ul>
+                    <li><a href="projekthem.html">Start</a></li>
+                    <li class="dropdown"><a href="#">Lag</a>
+                        <ul class="dropdown-content">
+                            <li><a href="slutprojektAIK.html">AIK</a></li>
+                            <li><a href="slutprojektDIF.html">Djurgården</a></li>
+                            <li><a href="slutprojektHIF.html">Hammarby</a></li>
+                            <li><a href="slutprojektBP.html">Brommapojkarna</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>   
+            <nav class="lokalnav">
+                <ul>
+                    <li><a href="#info">Allmänn information</a></li>
+                    <li><a href="#karta">Arenakarta</a></li>
+                    <li><a href="#bilder">Bildgalleri</a></li>
+                    <li><a href="#klubbinfotable">Övergripande fakta</a></li>
+                </ul>
+            </nav>
+            <p id="info">Välkommen till "Fotboll i Stockholm". Denna hemsida kommer ge dig en guide över dom största och mest populära fotbollsklubbarna i Stockholm.
+                Fakta om klubbarna, arenor, fans med mera finns på respektive klubbs sida.
+            </p>
             <p>Klicka gärna <a href="formulärslutprojekt.html">här</a> för att fylla i ett formulär om hur du upplever hemsidan. Det tar bara några minuter och skulle kunna bidra till att hemsidan förbättras</p>
-            <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1SHDhqJZzr2ZwAM1Ku8ZvoW16zE1sB4Ow" width="640" height="480"></iframe>
-        </article>
-        <aside>
-            <h2>Uppkommande derbyn</h3>
-            <b>Hammarby-Djurgården 28/4 2019</b>
-            <br>
-            <br>
-            <b>Djurgården-AIK 12/5 2019</b>
-            <br>
-            <br>
-            <b>AIK-Hammarby   2/6 2019</b>
-            <br>
-            <br>
-            <b>AIK-Djurgården 1/9 2019</b>
-            <br>
-            <br>
-            <b>Hammarby-AIK 22/9 2019</b>
-            <br>
-            <br>
-            <b>Djurgården-Hammarby 6/10 2019</b>
-            <br>
-            <br>
-            <img src="https://farm8.staticflickr.com/7287/16632227040_3fcced060d_b.jpg" alt="AIK-Hammarby" width="100%">
-        </aside>
-    </main>                
+            <iframe id="karta" src="https://www.google.com/maps/d/embed?mid=1SHDhqJZzr2ZwAM1Ku8ZvoW16zE1sB4Ow" width="600" height="300"></iframe>
+            <section class="bild-med-text">
+                <h2>Bildgalleri</h2>
+                <div id="bilder" class="bild-med-text">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Nikola_Djurdjic_2018_-_cropped.jpg/446px-Nikola_Djurdjic_2018_-_cropped.jpg" alt="Spelare i Hammarby">
+                    <div class="siffra-i-bild">1</div>
+                </div>
+                <div class="bild-med-text">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Henok_Goitom_%28vs._Elfsborg%2C_2014%29.jpg" alt="Spelare i AIK" width="450">
+                    <div class="siffra-i-bild">2</div>
+                </div>
+                <div class="bild-med-text">   
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Hammarby-Djurg%C3%A5rden-77.jpg/593px-Hammarby-Djurg%C3%A5rden-77.jpg" alt="Spelare i Djurgården" width="400">
+                    <div class="siffra-i-bild">3</div>
+                </div>
+                <ol  start="1">
+                    <li>Nikola Djurdic i Hammarby</li>
+                    <li>Henok Goitom i AIK</li>
+                    <li>Spelare i Djurgården firar mål mot Hammarby</li>
+                </ol>
+        </section>
+        <section>
+            <h2>Klubblagsfärger</h2>
+            <dl>
+                <dt>AIK</dt>
+                <dd>Svart och gul</dd>
+                <dt>Djurgården</dt>
+                <dd>Blå, röd och gul</dd>
+                <dt>Hammarby</dt>
+                <dd>Grön och vit</dd>
+                <dt>Brommapojkarna</dt>
+                <dd>Röd och svart</dd>
+            </dl>
+        </section>
+      <table id="klubbinfotable">
+          <thead>
+          <tr>
+              <th colspan="5">Övergripande fakta</th>
+           </tr>
+           <tr>
+               <th>Fakta</th>
+               <th>AIK</th>
+               <th>Brommapojkarna</th>
+               <th>Djurgården</th>
+               <th>Hammarby</th>
+           </tr>
+        </thead>
+        <tbody>
+           <tr>
+               <th>Antal SM-Guld</th>
+               <td>12</td>
+               <td>0</td>
+               <td>11</td>
+               <td>1</td>
+           </tr>
+           <tr>
+               <th>Säsonger i allsvenskan</th>
+               <td>90</td>
+               <td>6</td>
+               <td>63</td>
+               <td>53</td>
+           </tr>
+           <tr>
+               <th>Publiksnitt 2018</th>
+               <td>23 664</td>
+               <td>2 307</td>
+               <td>12 306</td>
+               <td>23 679</td>
+           </tr>
+        </tbody>
+      </table>
+    </main>
+    <aside>
+        <h2>Uppkommande derbyn</h2>
+        <b>Hammarby-Djurgården 28/4 2019</b>
+        <br>
+        <br>
+        <b>Djurgården-AIK 12/5 2019</b>
+        <br>
+        <br>
+        <b>AIK-Hammarby   2/6 2019</b>
+        <br>
+        <br>
+        <b>AIK-Djurgården 1/9 2019</b>
+        <br>
+        <br>
+        <b>Hammarby-AIK 22/9 2019</b>
+        <br>
+        <br>
+        <b>Djurgården-Hammarby 6/10 2019</b>
+        <br>
+        <br>
+        <img src="https://farm8.staticflickr.com/7287/16632227040_3fcced060d_b.jpg" alt="AIK-Hammarby">
+        <p>Derby mellan AIK och Hammarby</p>
+    </aside>
+    <footer role="contentinfo">
+        <h2>Fotboll i Stockholm - Sedan 2019</h2>
+    </footer>
 </body>
 </html>
+
+
+
+
+
